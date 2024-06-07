@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="password" value="" id="myInput"> &nbsp;
+<input type="checkbox" onclick="myFunction()">Ẩn/Hiện
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+</html>

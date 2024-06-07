@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+<body>
+<p id="demo"></p>
+<script>
+    var day=prompt('Nay la ngay: ');
+    let a;
+    if (day<8) {
+        a = 'Hom nay la thu ' + day;
+    } else if (day==8) {
+        a = 'Hom nay la Cn';
+    }
+    else{
+        alert("Nhap lai");
+    }
+    document.getElementById("demo").innerHTML = a;
+</script>
+</body>
+</html>

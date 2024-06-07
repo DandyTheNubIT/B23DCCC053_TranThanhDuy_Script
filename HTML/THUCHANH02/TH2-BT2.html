@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<script>
+    var numberArray = [81, 10, 49, 25, 100, 25, -50, 1000];
+    numberArray.sort();
+    numberArray.reverse();
+    alert("Maximum number is: " + numberArray[0]);
+    function squarenumber(n){
+        return n>0 && Math.sqrt(n)%1===0;
+    }
+    var newnumberArray = numberArray.filter(squarenumber);
+    alert("Số chính phương là: " + newnumberArray);
+    var sum1 = 0;
+    var avg = 0;
+    for(var i = 0; i < numberArray.length; i++){
+	sum1 = sum1 + numberArray[i];
+    }
+    avg = sum1 / numberArray.length;
+    for(var i = 0; i < numberArray.length; i++){    
+	if(numberArray[i] > avg)
+	alert("Số lớn hơn trung bình cộng là: " + numberArray[i]);
+    }
+    function songuyenduong(n){
+        return n>0 && n%1===0;
+    }
+    var newnumberArray2 = numberArray.filter(songuyenduong);
+    var sum2 = 0;
+    for(var i = 0; i < newnumberArray2.length; i++){
+    sum2 = sum2 + newnumberArray2[i];}
+    avg2= sum2/numberArray.length;
+    alert("Tổng các số nguyên dương là: " + avg2);
+    
+</script>
+</body>
+</html>

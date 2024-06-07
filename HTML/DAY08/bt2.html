@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.solid {border-style: solid;
+    width: 130px;}
+ul.a {
+  list-style-type: circle;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("ol").append("<li1>Làm bài tập Jquery</li1>");
+    $("ol").append("<li2>Làm bài tập Jquery</li2>");
+  });
+});
+</script>
+</head>
+<body>
+<p class="solid">Làm bài tập Jquery</p> <button id="btn1">Thêm nhiệm vụ</button> </p>
+<ul>
+<ol>
+  <li1 class="a" >Làm bài tập Jquery</li1><br>
+  <li2 style="color: darkgoldenrod;" class="a">Làm bài tập Jquery</li2><br>
+</ol>
+</ul>
+</body>
+</html>

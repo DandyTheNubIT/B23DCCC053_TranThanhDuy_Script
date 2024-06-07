@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documents</title>
+</head>
+<body>
+	<form action="/action_page.php">
+		<label for="fname">Username</label><br>
+		<input type="text" id="fname" name="fname" value=""><br>
+		<label for="pwd">Password:</label><br>
+  		<input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  		<input type="submit"><br>
+	</form>
+	<button onclick="redirect()" >Di chuyển trang</button>
+    <script>
+        function redirect(){
+            window.location.href = "https://portal.ptit.edu.vn/";
+        }
+	</script>
+</body>
+</html>

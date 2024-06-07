@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  background-color: lightgray;
+  color: black;
+}
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+<table style="width:100%">
+  <tr>
+    <th colspan="2" style="background-color:lightgray"><h1>CREATE ACCOUNT</h1></th>
+  </tr>
+  <tr>
+    <td><label for="fname" style="color:mediumseagreen;">First name*</label><br>
+    <input type="text" style="width:70%" id="username" name="username" required><br></form></td>
+    <td>
+    <label for="fname" style="color:mediumseagreen;">Last name*</label><br>
+    <input type="text" style="width:70%" id="username" name="username"><br></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <label for="fname" style="color:mediumseagreen;">Email*</label><br>
+    <input type="text" style="width:84.4%" id="email" name="email" required ><br></td>
+  </tr>
+  <tr>
+    <td>
+    <label for="fname" style="color:mediumseagreen;">Enter your Password*</label><br>
+    <input type="password" style="width:70%" id="password" name="password" required><br></td>
+    <td>
+    <label for="fname" style="color:mediumseagreen;">Enter your Password again*</label><br>
+    <input type="password" style="width:70%" id="password" name="password" required><br></td>
+  </tr>
+  <tr>
+     <td>
+     <label for="fname" style="color:mediumseagreen;">Gender:</label><br>
+     <input type="radio" id="Male" name="gender" value="Male" required>
+     <label for="Male">Male</label>
+     <input type="radio" id="Female" name="gender" value="Female" required>
+     <label for="Female">Female</label></td>
+     <td><label for="fname" style="color:mediumseagreen;">Hobbies</label><br>
+     <input type="checkbox" id="hobbie1" name="hobbie1" value="Music">
+     <label for="hobbie1">Music</label>
+     <input type="checkbox" id="hobbie2" name="hobbie2" value="Sports">
+     <label for="hobbie2">Sports</label>
+     <input type="checkbox" id="hobbie3" name="hobbie3" value="Travel">
+     <label for="hobbie3">Travel</label>
+     <input type="checkbox" id="hobbie4" name="hobbie4" value="Movies">
+     <label for="hobbie4">Movies</label>
+     </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="Source of Income" style="color:mediumseagreen;">Source of Income:</label>
+      <select id="Source of Income">
+      <option value="">Student</option>
+      <option value="">Unemployed</option>
+      <option value="">Employed</option>
+      <option value="">Bachelor</option>
+      </select></td>
+    <td>
+      <label for="vol">Income:</label>
+      <input type="range" id="vol" name="vol" min="0" max="100000">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="" style="color:mediumseagreen;">Upload Profile Picture</label><br>
+      <input type="file" id="myfile" name="myfile">
+    </td>
+    <td>
+      <label for="quantity" style="color:mediumseagreen;">Age</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <label for="fname" style="color:mediumseagreen;">Bio</label><br>
+      <input type="text" style="height:100px;width:85%;" id="bio" name="bio"><br>
+      <input type="submit" value="Submit">
+    </td>
+  </tr>
+</form>
+</table>
+</body>
+</html>

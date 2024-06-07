@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<script>
+    var number = [47, 12, 83, 29, 56, 91, 91, 56, 29, 83, 12, 47];
+    alert("[" + number.sort() + "]");
+    function removeDuplicates(number){
+    let unique = [];
+    number.forEach(element => {
+    if (!unique.includes(element)) {
+        unique.push(element);
+    }
+    });
+    return unique;
+    }
+    alert("[" + removeDuplicates(number) + "]");
+</script>
+</body>
+</html>
